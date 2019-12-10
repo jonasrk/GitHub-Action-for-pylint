@@ -6,7 +6,7 @@ LABEL "com.github.actions.icon"="upload-cloud"
 LABEL "com.github.actions.color"="green"
 
 
-RUN apt-get install python-pip
+RUN apt-get install python3-pip
 RUN pip install --upgrade pip
 RUN pip install pylint
 RUN python --version ; pip --version ; pylint --version
