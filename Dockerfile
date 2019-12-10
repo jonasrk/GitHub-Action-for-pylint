@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM python:3.6-buster
 
 LABEL "com.github.actions.name"="GitHub Action for pylint"
 LABEL "com.github.actions.description"="Run pylint commands"
