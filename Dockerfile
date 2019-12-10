@@ -12,7 +12,6 @@ RUN pip3 install --upgrade pip
 RUN pip3 install --upgrade setuptools
 RUN pip3 install pylint
 RUN python3 --version ; pip3 --version ; pylint --version
-RUN pip3 install -r src/requirements.txt
 
 COPY entrypoint.sh /
 RUN chmod +x /entrypoint.sh
