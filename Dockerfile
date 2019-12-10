@@ -7,7 +7,7 @@ LABEL "com.github.actions.color"="green"
 
 
 RUN apt-get update
-RUN apt-get install python-pip
+RUN apt-get -y install python-pip
 RUN pip install --upgrade pip
 RUN pip install pylint
 RUN python --version ; pip --version ; pylint --version
