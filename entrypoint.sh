@@ -6,7 +6,18 @@ echo "Starting ${GITHUB_WORKFLOW}:${GITHUB_ACTION}"
 
 sh -c "$*"
 
-pylint -E **/*.py
+echo "#################################################"
+echo "Completed ${GITHUB_WORKFLOW}:${GITHUB_ACTION}"
+
+echo "#################################################"
+echo "Starting PyLint"
+
+
+python3 -m pylint -E **/*.py
+
+echo "#################################################"
+echo "Ended PyLint"
+
 
 echo "#################################################"
 echo "Completed ${GITHUB_WORKFLOW}:${GITHUB_ACTION}"
