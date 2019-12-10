@@ -9,6 +9,7 @@ LABEL "com.github.actions.color"="green"
 RUN apt-get update
 RUN apt-get -y install python3-pip
 RUN pip3 install --upgrade pip
+RUN pip3 install --upgrade setuptools
 RUN pip3 install pylint
 RUN python3 --version ; pip3 --version ; pylint --version
 
