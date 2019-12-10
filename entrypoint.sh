@@ -13,7 +13,7 @@ echo "#################################################"
 echo "Starting PyLint"
 
 
-sh - c "python3 -m pylint -E **/*.py"
+sh -c "python3 -m pylint -E **/*.py"
 
 echo "#################################################"
 echo "Ended PyLint"
